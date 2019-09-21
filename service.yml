@@ -1,5 +1,5 @@
 - name: Restarts Service
-  hosts: localhost 
+  hosts: all
   gather_facts: True
   become: False
   
