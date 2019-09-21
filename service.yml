@@ -1,5 +1,5 @@
 - name: Restarts Service
-  hosts: webserverA
+  hosts: tag_Name_webserverA
   gather_facts: True
   become: True
   
