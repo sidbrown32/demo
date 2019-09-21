@@ -5,7 +5,6 @@
   
   tasks: 
     -  name: restart
-       shell: sudo su
        shell: systemctl status apache2
        register: output
     -  debug:
