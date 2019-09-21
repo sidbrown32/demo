@@ -7,7 +7,7 @@
   
   tasks: 
     -  name: restart
-       shell: systemctl stop apache2
+       shell: systemctl status apache2
        register: output
     -  debug:
          msg: " {{ output }}"
