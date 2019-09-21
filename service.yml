@@ -1,6 +1,7 @@
 - name: Restarts Service
   hosts: all
   gather_facts: True
+  become: False
   
   
   tasks: 
