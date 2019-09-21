@@ -1,5 +1,7 @@
 - name: Restarts Service
-  hosts: tag_Name_webserverA
+  hosts:  
+      ansible_host: webserverA
+        ansible_user: sidharth
   gather_facts: True
   become: True
   
