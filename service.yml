@@ -1,0 +1,11 @@
+- name: Restarts Service
+  hosts: webserverA
+  gather_facts: True
+  become: False
+  
+  tasks: 
+    -  name: restrt
+       shell: sudo systemctl status apache2
+       register: output
+    -  debug:
+         msg: " {{ output }}"
