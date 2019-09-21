@@ -1,11 +1,11 @@
 - name: Restarts Service
   hosts: all
   gather_facts: True
-  become: False
+  become: True
   
   tasks: 
     -  name: restart
-       shell: sudo systemctl status apache2
+       shell: systemctl status apache2
        register: output
     -  debug:
          msg: " {{ output }}"
