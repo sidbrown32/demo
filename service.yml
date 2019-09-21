@@ -1,7 +1,7 @@
 - name: Restarts Service
   hosts:  
-      ansible_host: webserverA
-        ansible_user: sidharth
+    ansible_host: webserverA
+      ansible_user: sidharth
   gather_facts: True
   become: True
   
